@@ -13,7 +13,7 @@
 		{"id":"b06fedfa4b62dd7b","type":"text","text":"# API\nApplication Programming Layer\n\nDefines how the program on host will interact with the internet to send the data to another specific host   ","x":480,"y":-498,"width":250,"height":259},
 		{"id":"48bec72e3486673e","type":"file","file":"projects/networking-top-down-approach/canvas/network-types.canvas","x":50,"y":-118,"width":225,"height":181},
 		{"id":"b213247d4014548e","type":"file","file":"switch.canvas","x":-1620,"y":438,"width":220,"height":215},
-		{"id":"aef2da492b20e1d5","type":"text","text":"# Infrastructure","x":-260,"y":-440,"width":220,"height":80}
+		{"id":"aef2da492b20e1d5","type":"text","text":"# Infrastructure","x":-310,"y":-440,"width":220,"height":80}
 	],
 	"edges":[
 		{"id":"07d7e1e2ca2e0f44","fromNode":"39d90c6f00a2c655","fromSide":"bottom","toNode":"b2351d2fc353e3f1","toSide":"top"},
