@@ -1,0 +1,13 @@
+{
+	"nodes":[
+		{"id":"adf88bc7e0cc3647","type":"text","text":"# Switch","x":-342,"y":-23,"width":120,"height":50},
+		{"id":"68c0282b08d3639a","type":"text","text":"# Circuit switchnig","x":-702,"y":184,"width":250,"height":60},
+		{"id":"5c112e4951cc7513","type":"text","text":"# Packet switching","x":-70,"y":184,"width":250,"height":60},
+		{"id":"853c7a53f5db8fea","type":"text","text":"# Store-and-Forward Transmission\nBefore transmission to another destination, the switch is waiting for delivering of all packets, this process is called bufferisation\nP - packet\n\n| Iterations | Destination 1 | ->  | Switch 2   | ->  | Destination 3 |\n| ---------- | ------------- | --- | ---------- | --- | ------------- |\n|            | P1, P2, P3    |     |            |     |               |\n| 1          | P1, P2        |     | P3         |     |               |\n| 2          | P1            |     | P2, P3     |     |               |\n| 3          |               |     | P1, P2, P3 |     |               |\n| 4          |               |     | P1, P2     |     | P3            |\n| 5          |               |     | P1         |     | P2, P3        |\n| 6          |               |     |            |     | P1, P2, P3    |\n\n","x":140,"y":420,"width":620,"height":424}
+	],
+	"edges":[
+		{"id":"1958937d944d5edd","fromNode":"adf88bc7e0cc3647","fromSide":"bottom","toNode":"68c0282b08d3639a","toSide":"top"},
+		{"id":"8a347fc0d051392c","fromNode":"adf88bc7e0cc3647","fromSide":"bottom","toNode":"5c112e4951cc7513","toSide":"top"},
+		{"id":"23c3e1c4e4f85529","fromNode":"5c112e4951cc7513","fromSide":"bottom","toNode":"853c7a53f5db8fea","toSide":"top"}
+	]
+}
