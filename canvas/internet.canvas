@@ -29,6 +29,6 @@
 		{"id":"a78b76594ff37328","fromNode":"39d90c6f00a2c655","fromSide":"right","toNode":"aef2da492b20e1d5","toSide":"left"},
 		{"id":"99a1d6614d46e90e","fromNode":"aef2da492b20e1d5","fromSide":"right","toNode":"2e435459481ece60","toSide":"left"},
 		{"id":"37133d857060f9d6","fromNode":"2e435459481ece60","fromSide":"right","toNode":"b06fedfa4b62dd7b","toSide":"left"},
-		{"id":"b61b3fe92317cf15","fromNode":"08aa8c85614d109c","fromSide":"left","toNode":"b213247d4014548e","toSide":"right","label":"Switch variations"}
+		{"id":"b61b3fe92317cf15","fromNode":"08aa8c85614d109c","fromSide":"left","toNode":"b213247d4014548e","toSide":"right","label":"Switch in details"}
 	]
 }

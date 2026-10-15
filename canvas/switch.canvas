@@ -11,7 +11,8 @@
 		{"id":"791b6f578b41bb12","type":"text","text":"# Transmission\nTime to push the parts of packet into the line of communication\n\nTime: few µs to few ms","x":620,"y":279,"width":250,"height":201},
 		{"id":"44c4453e04a79881","type":"text","text":"# Propagation\nTime of passing through line of communication\n\nTime: few ms","x":620,"y":514,"width":250,"height":166},
 		{"id":"853c7a53f5db8fea","type":"text","text":"# Store-and-Forward Transmission\nBefore transmission to another destination, the switch is waiting for delivering of all packets, this process is called bufferisation\nP - part of a packet\n\n| Iterations | Destination 1 | ->  | Switch 2   | ->  | Destination 3 |\n| ---------- | ------------- | --- | ---------- | --- | ------------- |\n|            | P1, P2, P3    |     |            |     |               |\n| 1          | P1, P2        |     | P3         |     |               |\n| 2          | P1            |     | P2, P3     |     |               |\n| 3          |               |     | P1, P2, P3 |     |               |\n| 4          |               |     | P1, P2     |     | P3            |\n| 5          |               |     | P1         |     | P2, P3        |\n| 6          |               |     |            |     | P1, P2, P3    |\n\n","x":0,"y":920,"width":620,"height":424},
-		{"id":"e974230b3df492c4","x":1080,"y":-28,"width":313,"height":314,"type":"text","text":"# Intensity of traffic\n$$\nLa/R \n$$\nL - length of a packet\na - number of packets\nR - speed of transmission\n\nIf the intensity of traffic > 1, then the switch receive more packets than he can transmiss to the line of communication "}
+		{"id":"e974230b3df492c4","x":1080,"y":-28,"width":313,"height":314,"type":"text","text":"# Intensity of traffic\n$$\nLa/R \n$$\nL - length of a packet\na - number of packets\nR - speed of transmission\n\nIf the intensity of traffic > 1, then the switch receive more packets than he can transmiss to the line of communication "},
+		{"id":"8b1b5fc5086cd058","x":1080,"y":420,"width":250,"height":220,"type":"text","text":"# Packet loss\nIf the buffer zone of a switch is completed, the new arriving packet will thrown away"}
 	],
 	"edges":[
 		{"id":"1958937d944d5edd","fromNode":"adf88bc7e0cc3647","fromSide":"bottom","toNode":"68c0282b08d3639a","toSide":"top","label":"By reservation"},
@@ -24,6 +25,7 @@
 		{"id":"d68c9308a5b631a8","fromNode":"d78c2f2d0698eae1","fromSide":"right","toNode":"4275fd1d8f93711c","toSide":"left"},
 		{"id":"c31b2a488ff9abbf","fromNode":"d78c2f2d0698eae1","fromSide":"right","toNode":"791b6f578b41bb12","toSide":"left"},
 		{"id":"f8eaf77728967674","fromNode":"d78c2f2d0698eae1","fromSide":"right","toNode":"44c4453e04a79881","toSide":"left"},
-		{"id":"27b5b8a86dca468d","fromNode":"4275fd1d8f93711c","fromSide":"right","toNode":"e974230b3df492c4","toSide":"left"}
+		{"id":"27b5b8a86dca468d","fromNode":"4275fd1d8f93711c","fromSide":"right","toNode":"e974230b3df492c4","toSide":"left"},
+		{"id":"6076efd65a62a4bf","fromNode":"4275fd1d8f93711c","fromSide":"right","toNode":"8b1b5fc5086cd058","toSide":"left"}
 	]
 }
