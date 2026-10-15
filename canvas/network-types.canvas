@@ -9,7 +9,7 @@
 		{"id":"a3c0fb84ee766a4c","type":"text","text":"# WiFi","x":745,"y":44,"width":250,"height":60},
 		{"id":"ba450d3ff4ff3690","type":"text","text":"# Ethernet","x":745,"y":260,"width":250,"height":60},
 		{"id":"155844554c7c396c","type":"text","text":"# Router\n(маршрутизатор)\n","x":85,"y":-218,"width":294,"height":135},
-		{"id":"69f17860d10dab0d","x":307,"y":-560,"width":248,"height":164,"type":"file","file":"projects/networking-top-down-approach/canvas/interner-service-provider.canvas"}
+		{"id":"69f17860d10dab0d","x":307,"y":-560,"width":248,"height":164,"type":"file","file":"projects/networking-top-down-approach/canvas/internet-service-provider.canvas"}
 	],
 	"edges":[
 		{"id":"e9f6196d50d2f426","fromNode":"a98a3b04d91d5f07","fromSide":"right","toNode":"d1c3fedfcb43e356","toSide":"left","toEnd":"none"},
