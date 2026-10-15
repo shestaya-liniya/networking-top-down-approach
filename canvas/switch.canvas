@@ -1,19 +1,17 @@
 {
 	"nodes":[
 		{"id":"adf88bc7e0cc3647","type":"text","text":"# Switch","x":-342,"y":-23,"width":120,"height":50},
-		{"id":"68c0282b08d3639a","type":"text","text":"# Circuit switchnig\nThe connection between two destination systems must be established before communication\n\nAs the circuit is pre-established, the speed of communication can be guaranteed","x":-702,"y":184,"width":250,"height":316},
+		{"id":"68c0282b08d3639a","type":"text","text":"# Circuit switchnig\nThe connection between two destination systems must be established before communication\n\nAs the circuit is pre-established, the speed of communication can be guaranteed\n\nReserved circuits when unused, are still have reserved ressources","x":-702,"y":184,"width":250,"height":376},
 		{"id":"853c7a53f5db8fea","type":"text","text":"# Store-and-Forward Transmission\nBefore transmission to another destination, the switch is waiting for delivering of all packets, this process is called bufferisation\nP - part of a packet\n\n| Iterations | Destination 1 | ->  | Switch 2   | ->  | Destination 3 |\n| ---------- | ------------- | --- | ---------- | --- | ------------- |\n|            | P1, P2, P3    |     |            |     |               |\n| 1          | P1, P2        |     | P3         |     |               |\n| 2          | P1            |     | P2, P3     |     |               |\n| 3          |               |     | P1, P2, P3 |     |               |\n| 4          |               |     | P1, P2     |     | P3            |\n| 5          |               |     | P1         |     | P2, P3        |\n| 6          |               |     |            |     | P1, P2, P3    |\n\n","x":220,"y":560,"width":620,"height":424},
 		{"id":"5c112e4951cc7513","type":"text","text":"# Packet switching\nPackets are sending separately","x":-60,"y":184,"width":250,"height":156},
-		{"id":"593494bfb686c148","x":-409,"y":-288,"width":250,"height":60,"type":"text","text":"# Connection line"},
-		{"id":"d4c3bcd8d7755017","x":-140,"y":-900,"width":250,"height":469,"type":"text","text":"# FDM\nFrequency-Divison Multiplexer\n\nThe line divide the frequency channel, giving for each signal it's own frequency\n\nConnection line has a bandwidth (полоса пропускания) of 4kHz\nSignal A runs on frequency 1kHz\nSignal B runs\non frequency 2kHz\n\nThe data is transfering simultaneously"},
-		{"id":"c9ac7841a010ed58","type":"text","text":"# TDM\nTime-Divison Multiplexer\n\nSignals get a schedule, or it's frame\n\n1ms -> send signal A\n2ms -> send signal B\n3ms -> send signal C\n4ms -> send signal A\n...\n\nFrame - a sequence of signals to send\nSlot - a place for a signal in a frame","x":-592,"y":-860,"width":250,"height":429}
+		{"id":"c9ac7841a010ed58","type":"text","text":"# TDM\nTime-Divison Multiplexer\n\nSignals get a schedule, or it's frame\n\n1ms -> send signal A\n2ms -> send signal B\n3ms -> send signal C\n4ms -> send signal A\n...\n\nFrame - a sequence of signals to send\nSlot - a place for a signal in a frame","x":-952,"y":680,"width":250,"height":429},
+		{"id":"d4c3bcd8d7755017","x":-407,"y":680,"width":250,"height":429,"type":"text","text":"# FDM\nFrequency-Divison Multiplexer\n\nThe line divide the frequency channel, giving for each signal it's own frequency\n\nConnection line has a bandwidth (полоса пропускания) of 4kHz\nSignal A runs on frequency 1kHz\nSignal B runs\non frequency 2kHz"}
 	],
 	"edges":[
-		{"id":"1958937d944d5edd","fromNode":"adf88bc7e0cc3647","fromSide":"bottom","toNode":"68c0282b08d3639a","toSide":"top"},
-		{"id":"8a347fc0d051392c","fromNode":"adf88bc7e0cc3647","fromSide":"bottom","toNode":"5c112e4951cc7513","toSide":"top"},
+		{"id":"1958937d944d5edd","fromNode":"adf88bc7e0cc3647","fromSide":"bottom","toNode":"68c0282b08d3639a","toSide":"top","label":"By reservation"},
+		{"id":"8a347fc0d051392c","fromNode":"adf88bc7e0cc3647","fromSide":"bottom","toNode":"5c112e4951cc7513","toSide":"top","label":"On demand"},
 		{"id":"23c3e1c4e4f85529","fromNode":"5c112e4951cc7513","fromSide":"bottom","toNode":"853c7a53f5db8fea","toSide":"top"},
-		{"id":"9442ce503b17ff68","fromNode":"adf88bc7e0cc3647","fromSide":"top","toNode":"593494bfb686c148","toSide":"bottom"},
-		{"id":"f2878d99832d515e","fromNode":"593494bfb686c148","fromSide":"top","toNode":"d4c3bcd8d7755017","toSide":"bottom"},
-		{"id":"54a4a6e3795a0392","fromNode":"593494bfb686c148","fromSide":"top","toNode":"c9ac7841a010ed58","toSide":"bottom"}
+		{"id":"7c83afa74492b288","fromNode":"68c0282b08d3639a","fromSide":"bottom","toNode":"c9ac7841a010ed58","toSide":"top"},
+		{"id":"86c98b43d95a6d91","fromNode":"68c0282b08d3639a","fromSide":"bottom","toNode":"d4c3bcd8d7755017","toSide":"top"}
 	]
 }
